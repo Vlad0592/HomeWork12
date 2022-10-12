@@ -31,17 +31,17 @@ abstract public class Driver<T extends Transport & Competing> {
 
 
     public void start() {
-        System.out.println("Поехали");
+        System.out.println(fio + "Поехали" + car.getModel() + car.getBrend());
     }
 
     public void finish() {
-        System.out.println("Закончили");
+        System.out.println(fio + "Закончили" + car.getBrend() + car.getModel());
 
     }
 
     public void refuelauto() {
 
-        System.out.println("Бензин на нулях");
+        System.out.println(fio + "Бензин на нулях" + car.getModel() + car.getBrend());
     }
 
     public void driverInfo() {
