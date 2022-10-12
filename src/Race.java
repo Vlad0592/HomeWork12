@@ -24,13 +24,16 @@ public class Race {
         DriverD oleg = new DriverD(" Oleg ",'D',  34, bus2);
 
 
-      vlad.driverInfo();
 
 
+      System.out.println(vlad);
+        vlad.driverInfo();
+
+        System.out.println(sasha);
        sasha.driverInfo();
 
 
-
+        System.out.println(oleg);
         oleg.driverInfo();
 
 

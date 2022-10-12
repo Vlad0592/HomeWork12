@@ -84,4 +84,9 @@ abstract public class Driver<T extends Transport & Competing> {
         this.car = (T) car;
     }
 
+    @Override
+    public String toString() {
+        return  fio + " " + driverLicense + "  " + " " + exp + car;
+
+    }
 }

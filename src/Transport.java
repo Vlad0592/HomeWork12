@@ -40,10 +40,7 @@ public abstract class  Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "brend='" + brend + '\'' +
-                ", model='" + model + '\'' +
-                ", volumeEngine=" + volumeEngine +
-                '}';
+        return  brend + " " + model +  " " + " " + volumeEngine;
+
     }
 }
