@@ -1,7 +1,7 @@
 public class Car extends  Transport implements Competing {
 
 
-    public Car(String brend, String model, double volumeEngine) {
+    public Car(String brend, String model, double volumeEngine, TypeOfBody sedan) {
         super(brend, model, volumeEngine);
     }
 

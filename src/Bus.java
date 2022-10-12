@@ -1,7 +1,7 @@
 public class Bus extends Transport implements Competing {
 
 
-    public Bus(String brend, String model, double volumeEngine) {
+    public Bus(String brend, String model, double volumeEngine, TypeOfWeight n3) {
         super(brend, model, volumeEngine);
     }
 

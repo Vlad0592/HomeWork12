@@ -1,6 +1,6 @@
 public class Truck extends Transport implements Competing {
 
-    public Truck(String brend, String model, double volumeEngine) {
+    public Truck(String brend, String model, double volumeEngine, TypeOfCapacity n4) {
         super(brend, model, volumeEngine);
     }
 
