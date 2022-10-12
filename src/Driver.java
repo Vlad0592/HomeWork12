@@ -1,19 +1,87 @@
-public class Driver < T extends Transport > {
+abstract public class Driver<T extends Transport & Competing> {
 
-     private String fio;
-     private  boolean driverLicense;
-     private int exp;
+    private String fio;
+    private Character driverLicense;
+    private int exp;
 
-     public void start() {
-         System.out.println("Поехали");
-     }
-     public void  finish(){
-         System.out.println("Закончили");
+    private T car;
 
-     }
 
-     public  void refuelauto() {
+    protected Driver(String fio, Character driverLicense, int exp, T car) {
+        if (fio == null || fio.isEmpty()) {
+            throw new NullPointerException("Укажите имя водителя");
 
-         System.out.println("Бензин на нулях");
-     }
+
+        } else {
+
+            this.fio = fio;
+        }
+
+        if (driverLicense != 'B' && driverLicense != 'C' && driverLicense != 'D') {
+            throw new NullPointerException("Нет прав иди в автошколу");
+        } else {
+            this.driverLicense = driverLicense;
+        }
+
+        if (car != null) {
+            this.car = car;
+        }
+        setExp(exp);
+    }
+
+
+    public void start() {
+        System.out.println("Поехали");
+    }
+
+    public void finish() {
+        System.out.println("Закончили");
+
+    }
+
+    public void refuelauto() {
+
+        System.out.println("Бензин на нулях");
+    }
+
+    public void driverInfo() {
+        System.out.println("Водитель" + fio + "управляет" + car.getModel() + " " + car.getBrend() + " и будет учавствовать в заезде");
+    }
+
+    public String getFio() {
+        return fio;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
+    }
+
+    public Character getDriverLicense() {
+        return driverLicense;
+    }
+
+    public void setDriverLicense(Character driverLicense) {
+        this.driverLicense = driverLicense;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        if (exp <= 0) {
+            throw new NullPointerException("Нет прав иди в автошколу");
+        } else {
+            this.exp = exp;
+        }
+    }
+
+    public T getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = (T) car;
+    }
+
 }

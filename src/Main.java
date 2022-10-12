@@ -1,20 +1,22 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
         Car lada = new Car(" лада ", " гранда ", 1.5);
-        Car mersedes = new Car("лада", "гранда", 1.5);
-        Car bmv = new Car("лада", "гранда", 1.5);
-        Car volvo = new Car("лада", "гранда", 1.5);
+        Car mersedes = new Car("мерседес", "564", 3.5);
+        Car bmv = new Car("бмв", "слс546", 4.5);
+        Car volvo = new Car("волво", "за567", 1.4);
 
         Bus zil = new Bus("Зил", "3105", 2.5);
-        Bus yaz = new Bus("Зил", "3105", 2.5);
-        Bus paz = new Bus("Зил", "3105", 2.5);
-        Bus kakaz = new Bus("Зил", "3105", 2.5);
+        Bus yaz = new Bus("уаз", "3106", 2.6);
+        Bus paz = new Bus("паз", "3107", 2.7);
+        Bus kakaz = new Bus("каказ", "3108", 2.8);
 
-        Truck kamaz = new Truck("Камаз","4567", 25);
-        Truck maz = new Truck("Камаз","4567", 25);
-        Truck man = new Truck("Камаз","4567", 25);
-        Truck pan = new Truck("Камаз","4567", 25);
+        Truck kamaz = new Truck("Камаз","4567", 55);
+        Truck maz = new Truck("маз","4568", 25);
+        Truck man = new Truck("ман","4569", 45);
+        Truck pan = new Truck("пан","4578", 75);
 
         System.out.println();
         print(lada);
@@ -32,13 +34,14 @@ public class Main {
         print(man);
         print(pan);
 
-
-
-
-
-
-
     }
+
+
+
+
+
+
+
     public static void print(Transport transport) {
         System.out.println(transport.getBrend() + " " + transport.getModel() + " " + transport.getVolumeEngine());
     }
