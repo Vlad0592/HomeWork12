@@ -1,7 +1,19 @@
 public class Truck extends Transport implements Competing {
 
-    public Truck(String brend, String model, double volumeEngine, TypeOfCapacity n4) {
+    private TypeOfWeight typeOfWeight;
+
+    public TypeOfWeight getTypeOfWeight() {
+        return typeOfWeight;
+    }
+
+    public void setTypeOfWeight(TypeOfWeight typeOfWeight) {
+        this.typeOfWeight = typeOfWeight;
+    }
+
+    public Truck(String brend, String model, double volumeEngine, TypeOfWeight) {
         super(brend, model, volumeEngine);
+
+
     }
 
     @Override

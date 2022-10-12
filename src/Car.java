@@ -1,9 +1,23 @@
 public class Car extends  Transport implements Competing {
 
+    private TypeOfBody typeOfBody;
 
-    public Car(String brend, String model, double volumeEngine, TypeOfBody sedan) {
-        super(brend, model, volumeEngine);
+
+    public TypeOfBody getTypeOfBody() {
+        return typeOfBody;
     }
+
+    public void setTypeOfBody(TypeOfBody typeOfBody) {
+        this.typeOfBody = typeOfBody;
+    }
+
+    public Car(String brend, String model, double volumeEngine, TypeOfBody TypeOfBody ) {
+        super(brend, model, volumeEngine);
+
+
+    }
+
+
 
     @Override
     public void startMove() {
@@ -31,4 +45,6 @@ public class Car extends  Transport implements Competing {
     public int getMaxSpeed() {
         return 350;
     }
+
+
 }
