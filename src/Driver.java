@@ -30,6 +30,8 @@ abstract public class Driver<T extends Transport & Competing> {
     }
 
 
+
+
     public void start() {
         System.out.println(fio + "Поехали" + car.getModel() + car.getBrend());
     }

@@ -10,7 +10,7 @@ private TypeOfCapacity typeOfCapacity;
         this.typeOfCapacity = typeOfCapacity;
     }
 
-    public Bus(String brend, String model, double volumeEngine,  TypeOfCapacity) {
+    public Bus(String brend, String model, double volumeEngine,  TypeOfCapacity typeOfCapacity) {
         super(brend, model, volumeEngine);
 
     }
@@ -41,5 +41,11 @@ private TypeOfCapacity typeOfCapacity;
     @Override
     public int getMaxSpeed() {
         return 250;
+    }
+
+    @Override
+    public boolean servise() {
+        System.out.println("Автобус" + getBrend() + getModel() + "в диагностике не требуется" );
+        return true;
     }
 }

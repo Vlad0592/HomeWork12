@@ -37,7 +37,7 @@ public abstract class  Transport {
     public abstract void startMove();
 
     public abstract void finishMove();
-
+    public abstract boolean servise();
     @Override
     public String toString() {
         return  brend + " " + model +  " " + " " + volumeEngine;

@@ -10,7 +10,7 @@ public class Truck extends Transport implements Competing {
         this.typeOfWeight = typeOfWeight;
     }
 
-    public Truck(String brend, String model, double volumeEngine, TypeOfWeight) {
+    public Truck(String brend, String model, double volumeEngine, TypeOfWeight typeOfWeight) {
         super(brend, model, volumeEngine);
 
 
@@ -41,5 +41,10 @@ public class Truck extends Transport implements Competing {
     @Override
     public int getMaxSpeed() {
         return 89;
+    }
+
+    @Override
+    public boolean servise() {
+        return Math.random() > 0.75;
     }
 }
