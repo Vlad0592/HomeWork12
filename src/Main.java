@@ -1,7 +1,15 @@
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
+
+
         Car lada = new Car(" лада ", " гранда ", 1.5, TypeOfBody.SEDAN);
+
+
+
+
         Car mersedes = new Car("мерседес", "564", 3.5, TypeOfBody.HATCHBACK);
         Car bmv = new Car("бмв", "слс546", 4.5, TypeOfBody.VAN);
         Car volvo = new Car("волво", "за567", 1.4, TypeOfBody.HATCHBACK);
@@ -16,6 +24,11 @@ public class Main {
         Truck man = new Truck("ман","4569", 45, TypeOfWeight.N2);
         Truck pan = new Truck("пан","4578", 75, TypeOfWeight.N1);
 
+        List<Transport> transports = List.of(
+                lada, mersedes, bmv, volvo,
+                zil, yaz, paz, kakaz,
+                kamaz, maz, man,pan
+        );
 
 
         System.out.println();

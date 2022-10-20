@@ -16,6 +16,11 @@ private TypeOfCapacity typeOfCapacity;
     }
 
     @Override
+    public void repair() {
+        System.out.println("Автобус" + getBrend() + getModel() + "починена");
+    }
+
+    @Override
     public void startMove() {
         System.out.println("Автобус начал движение");
 
