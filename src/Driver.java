@@ -1,4 +1,4 @@
-abstract public class Driver<T extends Transport & Competing> {
+public class Driver<T extends Transport & Competing> {
 
     private String fio;
     private Character driverLicense;
@@ -22,10 +22,10 @@ abstract public class Driver<T extends Transport & Competing> {
         } else {
             this.driverLicense = driverLicense;
         }
-
         if (car != null) {
             this.car = car;
         }
+
         setExp(exp);
     }
 
